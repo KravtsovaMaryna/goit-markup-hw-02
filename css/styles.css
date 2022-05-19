@@ -1,0 +1,93 @@
+;:root {
+    --tel-color: #757575;
+    --title-color: #212121;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {text-decoration: none;
+color: black;}
+
+.header {
+    background-color: #FFFFFF;
+}
+
+.header-list {
+width: 1600px;
+height: 80px;
+left: 0px;
+top: 0px;
+background: #FFFFFF;
+}
+
+.header-logo {
+    font-family: "Raleway", sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #2196F3;}
+
+.logo-accent {color: #212121;}
+
+.header-item {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.19;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+
+.header-link:hover .header-link:focus{
+    color: #2196F3;
+}
+
+/* Огорнути телефон в сірий колір*/
+
+
+/*-----------MAIN----------*/
+
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #ffffff;
+}
+
+.hero-btn {
+    background: #2196F3;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+color: #FFFFFF;
+position: absolute;
+width: 200px;
+height: 50px;
+left: 700px;
+top: 430px;
+}
+
+/*----Почему кнопка не ложится на черній цвет синим?-*/
+
+/* Ниже скріть слово "Преимущества" ---как??? hidden*/
