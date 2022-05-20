@@ -1,19 +1,65 @@
-;:root {
-    --tel-color: #757575;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button{
+    border: none;
+}
+
+/* img{
+display: block;
+width: 100%;
+height: auto; 
+} */
+
+
+
+/* // Спрятанные элементы */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+    --main-color: #757575;
     --title-color: #212121;
     --accent-color: #2196F3;
+    --white-color: #FFFFFF;
 }
 
 body {
     font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
 }
 
 .list {
     list-style: none;
 }
 
-.link {text-decoration: none;
-color: black;}
+
 
 .header {
     background-color: #FFFFFF;
@@ -28,19 +74,17 @@ background: #FFFFFF;
 }
 
 .header-logo {
-    font-family: "Raleway", sans-serif;
-font-style: normal;
+font-family: "Raleway", sans-serif;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
-letter-spacing: 0.03em;
-color: #2196F3;}
+color: #2196F3;
+}
 
 .logo-accent {color: #212121;}
 
 .header-item {
-    font-family: 'Roboto';
-font-style: normal;
+font-family: 'Roboto';
 font-weight: 500;
 font-size: 14px;
 line-height: 1.19;
@@ -48,46 +92,157 @@ letter-spacing: 0.02em;
 color: #2196F3;
 }
 
-.header-link:hover .header-link:focus{
-    color: #2196F3;
+.header-link{
+    color: #000;
 }
 
-/* Огорнути телефон в сірий колір*/
+.header-link:hover,
+ .header-link:focus{
+    color: var(--accent-color);
+}
+
+.contacts {
+    color: var(--main-color);
+}
 
 
-/*-----------MAIN----------*/
+/*-----------MAIN-----Section Hero-----*/
+
 
 .hero {
     background-color: #2F303A;
 }
 
 .hero-title {
-    font-family: 'Roboto';
-font-style: normal;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: #ffffff;
+color: var(--white-color);
+}
+
+/*----BUTTON------*/
+.hero-btn {
+background: #2196F3;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+
 }
 
 .hero-btn {
-    background: #2196F3;
-    font-family: 'Roboto';
-font-style: normal;
+    cursor: pointer;
+}
+/*------Section about ----*/
+
+.about-title {
 font-weight: 700;
-font-size: 16px;
-line-height: 30px;
-color: #FFFFFF;
-position: absolute;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--title-color);
 }
 
-/*----Почему кнопка не ложится на черній цвет синим?-*/
+.about-text {
+font-size: 14px;
+line-height: 1.71;
+color: var(--main-color)
+}
 
-/* Ниже скріть слово "Преимущества" ---как??? hidden*/
+/*-------Activity-------*/
+.activity-title, .masters-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+color: var(--title-color);
+}
+
+/*--------- Masters --*/
+.masters {
+    background-color: #F5F4FA;
+}
+
+.masters-item-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-color)
+
+}
+.masters-item-text {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+        color: var(--main-color)
+}
+
+/*------FOOTER------*/
+
+.footer {
+    background: #2F303A;
+}
+
+.footer-logo {
+    color: var(--white-color);
+}
+
+.address-item, .link-mail, .link-tel {
+font-size: 14px;
+line-height: 1.71;
+color: #FFFFFF;
+}
+
+.link-color {
+color: var(--main-color);
+}
+
+.address-item:hover, .address-item:focus,
+.link-color:hover, .link-color:focus {
+    color: var(--accent-color);
+}
+
+
+/*-------------PORTFOLIO--2------------*/
+
+.roster {
+    background-color: #F5F4FA;
+}
+
+.roster-btn {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+color: var(--title-color);
+}
+.roster-btn:hover, .roster-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color)
+}
+
+.roster-btn {
+    cursor: pointer;
+}
+
+.images-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--title-color);
+
+}
+
+.images-text {
+font-size: 16px;
+line-height: 1.87;
+color: var(--main-color);
+}
