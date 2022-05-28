@@ -42,6 +42,21 @@ height: auto;
   overflow: hidden;
 }
 
+/* ----------RESET---Скидання стилів--------*/
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+/*--------------------------------------*/
 :root {
     --main-color: #757575;
     --title-color: #212121;
